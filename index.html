@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendation Chatbot</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://www.google.com/books/jsapi.js"></script>
+</head>
+<body class="bg-gradient-to-r from-blue-500 to-green-500 flex justify-center items-center h-screen">
+    <div class="bg-white shadow-lg rounded-lg max-w-md w-full p-4">
+        <div id="chat-box" class="overflow-y-auto h-96 mb-4 p-4 bg-gray-100 rounded-lg">
+            <!-- Chat messages will appear here -->
+        </div>
+        <div class="flex">
+            <input type="text" id="user-input" class="flex-grow p-2 border border-gray-300 rounded-l-lg focus:outline-none" placeholder="Type your message...">
+            <button id="send-btn" class="bg-blue-500 text-white p-2 rounded-r-lg hover:bg-blue-700">Send</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
